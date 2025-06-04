@@ -1,18 +1,24 @@
 
-import IMG from '../components/imgs/img.PNG'
+import IMG from '../components/imgs/img1.jpg';
 export default function Hero() {
     return (
-        <div className='bg-gray-100 min-h-screen flex flex-col items-center justify-center text-center'>
-            <h1 className='text-4xl text-gray-900 p-4 '>Welcome to Our Website</h1>
-            <p className='mt-4 text-lg text-gray-600 mx-4'>We are glad to have you here. Explore our content and enjoy your stay!</p>
+        <div>
 
-            <div>
-                <img src={IMG} className='w-full h-auto' />
+            <div className='bg-gray-100 min-h-screen flex flex-col items-center justify-center text-center md:grid md:grid-cols-2'>
+
+                <h1 className='text-4xl text-gray-900 md:text-5xl md:font-bold'>Welcome to Our Website</h1>
+
+                <div className='flex ' >
+                    <p className='mt-4 text-lg text-gray-600 mx-10'>We are glad to have you here. Explore our content and enjoy your stay!</p>
+                </div>
+
+                <div>
+                    <img src={IMG} className='w-full h-auto' />
+
+                    <button className='border py-3 rounded-lg hover:bg-yellow-500 transition duration-1000 mt-5 w-[20em]'>Get Started</button>
+
+                </div>
             </div>
-            <div className='flex justify-center mt-8'>
-                <button className='bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300'>Get Started</button>
-            </div>
-           
         </div>
     );
 }
