@@ -2,9 +2,9 @@
 import IMG from '../components/imgs/img1.jpg';
 export default function Hero() {
     return (
-        <div>
+        <div className=''>
 
-            <div className='bg-gray-100 min-h-screen flex flex-col items-center justify-center text-center md:grid md:grid-cols-2'>
+            <div className='bg-gray-100 min-h-screen flex flex-col items-center justify-center text-center md:grid md:grid-cols-2 '>
 
                 <h1 className='text-4xl text-gray-900 md:text-5xl md:font-bold mt-30'>Welcome to Our Website</h1>
                 <h3 className='text-2xl text-gray-700 md:text-3xl md:font-semibold'>This website is all about contractors services</h3>
@@ -16,6 +16,9 @@ export default function Hero() {
                 <div>
                     <img src={IMG} className='w-full h-auto' />
 
+                    <div className='p-3 rounded border mt-5 bg-gradient-to-r to-blue-700 from-red-400 hover:bg-gradient-to-r hover:from-sky-700 hover:to-amber-500'>
+                        <button className='capitalize font-medium text-slate-800 '>create your profile</button>
+                    </div>
                     <button className='border py-3 rounded-lg hover:bg-yellow-500 transition duration-1000 mt-5 w-[20em]'>Get Started for free</button>
 
                 </div>
